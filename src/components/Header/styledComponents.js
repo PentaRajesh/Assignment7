@@ -32,6 +32,10 @@ export const ContentContainer = styled.ul`
   width: 15%;
 `
 
+export const ContentListItem = styled.li`
+  display: flex;
+`
+
 export const LogoutButton = styled.button`
   font-family: 'Roboto';
   font-weight: 600;
@@ -96,7 +100,7 @@ export const AlignRow = styled.div`
   justify-content: space-between;
 `
 
-export const AlignCloumn = styled.div`
+export const AlignColumn = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #cbd5e1;

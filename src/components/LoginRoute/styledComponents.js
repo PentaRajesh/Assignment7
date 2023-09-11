@@ -58,7 +58,7 @@ export const LoginButton = styled.button`
   cursor: pointer;
 `
 
-export const InutLabel = styled.label`
+export const InputLabel = styled.label`
   margin-bottom: 0px;
   font-family: 'Roboto';
   font-weight: bold;

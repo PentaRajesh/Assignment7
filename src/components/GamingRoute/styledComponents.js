@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
-export const SearchVideosConatiner = styled.div`
+export const SearchVideosContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${props => props.bgColor};
