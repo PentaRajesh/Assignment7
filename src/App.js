@@ -25,16 +25,16 @@ class App extends Component {
     this.setState(prev => ({isDarkTheme: !prev.isDarkTheme}))
   }
 
-  addToSaveVideos = VideoDetails => {
+  addToSaveVideo = videoDetails => {
     const {savedVideos} = this.state
-    const videoObject = savedVideos.find(each => each.id === VideoDetails.id)
+    const videoObject = savedVideos.find(each => each.id === videoDetails.id)
 
     if (videoObject) {
       this.setState(prev => ({
         savedVideos: [...prev.savedVideos],
       }))
     } else {
-      this.setState({savedVideos: [...savedVideos, VideoDetails]})
+      this.setState({savedVideos: [...savedVideos, videoDetails]})
     }
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
         value={{
           isDarkTheme,
           savedVideos,
-          addToSaveVideos: this.addToSaveVideos,
+          addToSaveVideo: this.addToSaveVideo,
           activeTabItem: this.activeTabItem,
           activeTab,
           onChangeTheme: this.onChangeTheme,
